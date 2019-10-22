@@ -1,9 +1,16 @@
 language: node_js
 node_js:
   - '10'
+branches:
+  only:
+  - master
 before_script:
   - bash ./setenv.sh
-script:
-  - npm run lint
-  - npm run test
-  - npm run coverage
+jobs:
+  include:
+    - stage: "lint"
+      script: npm run lint
+    - stage: "test"
+      script: npm run test
+    - stage: "coverage"
+      script: npm run coverage
