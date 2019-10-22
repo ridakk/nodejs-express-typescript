@@ -24,6 +24,8 @@
   },
   "homepage": "https://github.com/ridakk/nodejs-express-typescript#readme",
   "devDependencies": {
+    "@types/config": "0.0.34",
+    "@types/dotenv": "^6.1.1",
     "@typescript-eslint/eslint-plugin": "^2.5.0",
     "@typescript-eslint/parser": "^2.5.0",
     "cz-conventional-changelog": "^3.0.2",
@@ -43,5 +45,10 @@
     "hooks": {
       "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
     }
+  },
+  "dependencies": {
+    "config": "^3.2.3",
+    "dotenv": "^8.2.0",
+    "js-yaml": "^3.13.1"
   }
 }
