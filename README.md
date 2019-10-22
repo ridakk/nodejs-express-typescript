@@ -1,5 +1,7 @@
 # minimal NodeJs Express starter with TypeScript
 
+[![Build Status](https://travis-ci.org/ridakk/nodejs-express-typescript.svg?branch=master)](https://travis-ci.org/ridakk/nodejs-express-typescript)
+
 ## Usage (quick start)
 
  1. clone the repo
