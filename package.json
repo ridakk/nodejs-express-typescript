@@ -4,7 +4,8 @@
   "description": "minimal NodeJs Express starter with TypeScript",
   "main": "./dist/server.js",
   "scripts": {
-    "release": "standard-version"
+    "release": "standard-version",
+    "lint": "eslint '**/*.ts'"
   },
   "repository": {
     "type": "git",
@@ -23,8 +24,14 @@
   },
   "homepage": "https://github.com/ridakk/nodejs-express-typescript#readme",
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.5.0",
+    "@typescript-eslint/parser": "^2.5.0",
     "cz-conventional-changelog": "^3.0.2",
+    "eslint": "^6.5.1",
+    "eslint-config-prettier": "^6.4.0",
+    "eslint-plugin-prettier": "^3.1.1",
     "husky": "^3.0.9",
+    "prettier": "^1.18.2",
     "standard-version": "^7.0.0"
   },
   "config": {
