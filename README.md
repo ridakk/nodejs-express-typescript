@@ -80,6 +80,6 @@ See [example](./routes/test/test.route.test.ts) for a simple test route.
 
 ## Commit guideline
 
-This repo is Commitizen-friendly and using use [AngularJS's commit message](https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#-git-commit-guidelines) convention also known as ][conventional-changelog](https://github.com/conventional-changelog/conventional-changelog).
+This repo is Commitizen-friendly and using use [AngularJS's commit message](https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#-git-commit-guidelines) convention also known as [conventional-changelog](https://github.com/conventional-changelog/conventional-changelog).
 
 Commitizen on git commit with [husky](https://www.npmjs.com/package/husky).
