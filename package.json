@@ -10,6 +10,7 @@
     "start": "NODE_ENV=production node dist/server.js",
     "dev": "NODE_ENV=development tsc-watch --onSuccess \"node ./dist/server.js\"",
     "test": "./node_modules/.bin/jest --verbose --detectOpenHandles --forceExit --maxWorkers 2",
+    "coveralls": "jest --coverage && cat ./coverage/lcov.info | coveralls",
     "coverage": "./node_modules/.bin/jest --coverage --verbose"
   },
   "repository": {
@@ -43,6 +44,7 @@
     "@types/swagger-ui-express": "^3.0.1",
     "@typescript-eslint/eslint-plugin": "^2.5.0",
     "@typescript-eslint/parser": "^2.5.0",
+    "coveralls": "^3.0.7",
     "cz-conventional-changelog": "^3.0.2",
     "eslint": "^6.5.1",
     "eslint-config-prettier": "^6.4.0",
