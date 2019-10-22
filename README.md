@@ -27,7 +27,7 @@
 
 Used [swagger-jsdoc](https://www.npmjs.com/package/swagger-jsdoc) for generating [Swagger](https://swagger.io/) using [JSDoc](https://jsdoc.app/) comments in code.
 
-See [test route](./src/routes/test/test.route.ts) for a simple usage example.
+See [test route](./routes/test/test.route.ts) for a simple usage example.
 
 ## Configuration Management
 
@@ -76,7 +76,7 @@ See [logger](utils/logger) for a basic pino configuration.
 
 This demo app includes automated tests using [supertest](https://www.npmjs.com/package/supertest) and [jest](https://www.npmjs.com/package/jest) to test routes, etc.
 
-See [example](./src/routes/test/test.route.test.ts) for a simple test route.
+See [example](./routes/test/test.route.test.ts) for a simple test route.
 
 ## Commit guideline
 
