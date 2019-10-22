@@ -1,6 +1,7 @@
 # minimal NodeJs Express starter with TypeScript
 
 [![Build Status](https://travis-ci.org/ridakk/nodejs-express-typescript.svg?branch=master)](https://travis-ci.org/ridakk/nodejs-express-typescript)
+[![Coverage Status](https://coveralls.io/repos/github/ridakk/nodejs-express-typescript/badge.svg?branch=master)](https://coveralls.io/github/ridakk/nodejs-express-typescript?branch=master)
 
 ## Usage (quick start)
 
