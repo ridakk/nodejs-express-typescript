@@ -1,0 +1,40 @@
+{
+  "name": "nodejs-express-typescript",
+  "version": "1.0.0",
+  "description": "minimal NodeJs Express starter with TypeScript",
+  "main": "./dist/server.js",
+  "scripts": {
+    "release": "standard-version"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ridakk/nodejs-express-typescript.git"
+  },
+  "keywords": [
+    "NodeJs",
+    "Express",
+    "TypeScript",
+    "BoilerPlate"
+  ],
+  "author": "Kadir Goktas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ridakk/nodejs-express-typescript/issues"
+  },
+  "homepage": "https://github.com/ridakk/nodejs-express-typescript#readme",
+  "devDependencies": {
+    "cz-conventional-changelog": "^3.0.2",
+    "husky": "^3.0.9",
+    "standard-version": "^7.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
+    }
+  }
+}
