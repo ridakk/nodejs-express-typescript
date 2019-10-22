@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.org/ridakk/nodejs-express-typescript.svg?branch=master)](https://travis-ci.org/ridakk/nodejs-express-typescript)
 [![Coverage Status](https://coveralls.io/repos/github/ridakk/nodejs-express-typescript/badge.svg?branch=master)](https://coveralls.io/github/ridakk/nodejs-express-typescript?branch=master)
+![David](https://img.shields.io/david/ridakk/nodejs-express-typescript)
+![Snyk Vulnerabilities for GitHub Repo](https://img.shields.io/snyk/vulnerabilities/github/ridakk/nodejs-express-typescript)
 
 ## Usage (quick start)
 
