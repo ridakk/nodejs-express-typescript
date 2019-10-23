@@ -94,4 +94,4 @@ To use Commitizen command line interface:
 npm run cm
 ```
 
-For validating commit message format for users using `git commit`, [commitlint](https://commitlint.js.org/#/) is used to checks if your commit messages meet the conventional commit format.
+For validating commit message format for users using `git commit`, [commitlint](https://commitlint.js.org/#/) is used to check if the commit messages meet the conventional commit format.
