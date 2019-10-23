@@ -4,6 +4,7 @@
 [![Coverage Status](https://coveralls.io/repos/github/ridakk/nodejs-express-typescript/badge.svg?branch=master)](https://coveralls.io/github/ridakk/nodejs-express-typescript?branch=master)
 ![David](https://img.shields.io/david/ridakk/nodejs-express-typescript)
 ![Snyk Vulnerabilities for GitHub Repo](https://img.shields.io/snyk/vulnerabilities/github/ridakk/nodejs-express-typescript)
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
 ## Usage (quick start)
 
@@ -87,4 +88,10 @@ See [example](./routes/test/test.route.test.ts) for a simple test route.
 
 This repo is Commitizen-friendly and using use [AngularJS's commit message](https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#-git-commit-guidelines) convention also known as [conventional-changelog](https://github.com/conventional-changelog/conventional-changelog).
 
-Commitizen on git commit with [husky](https://www.npmjs.com/package/husky).
+To use Commitizen command line interface:
+
+```bash
+npm run cm
+```
+
+For validating commit message format for users using `git commit`, [commitlint](https://commitlint.js.org/#/) is used to checks if your commit messages meet the conventional commit format.
