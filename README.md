@@ -29,11 +29,30 @@
     ? `npm start`
  10. Open browser tab to [Swagger UI Explorer](http://localhost:8000/api-docs) to explore API
 
+## Features
+
+* [Language: Typescript](https://www.typescriptlang.org/)
+* [Framework: Express](https://expressjs.com/)
+* [Documentation: Swagger UI](https://swagger.io/docs/open-source-tools/swagger-ui/usage/installation/)
+* [Documentation: OpenAPI](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md)
+* [Documentation: Swagger JsDoc](https://www.npmjs.com/package/swagger-jsdoc)
+* [Configuration: Config](https://www.npmjs.com/package/config)
+* [Environment Variables: Dotenv](https://www.npmjs.com/package/dotenv)
+* [Logging: Pino](https://www.npmjs.com/package/pino)
+* [Security: Helmet](https://www.npmjs.com/package/helmet)
+* [Testing: Jest](https://jestjs.io/en/)
+* [Testing: Supertest](https://www.npmjs.com/package/supertest)
+* [Code Formatting: Eslint](https://www.npmjs.com/package/eslint)
+* [Code Formatting: Prettier](https://www.npmjs.com/package/prettier)
+* [Commit Format: Commitizen](https://www.npmjs.com/package/commitizen)
+* [Commit Format: Commitlint](https://www.npmjs.com/package/commitlint)
+* [Changelog & Versioning](https://www.npmjs.com/package/standard-version)
+
 ## Api Documentation
 
 Used [swagger-jsdoc](https://www.npmjs.com/package/swagger-jsdoc) for generating [Swagger](https://swagger.io/) using [JSDoc](https://jsdoc.app/) comments in code.
 
-See [test route](./routes/test/test.route.ts) for a simple usage example.
+See [health route](./routes/health/health.route.ts) for a simple usage example.
 
 ## Configuration Management
 

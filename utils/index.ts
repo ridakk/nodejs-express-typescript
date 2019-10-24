@@ -1,3 +1,5 @@
 import logger from './logger';
+import Shutdown from './Shutdown';
+import eventEmitter from './eventEmitter';
 
-export { logger };
+export { logger, eventEmitter, Shutdown };

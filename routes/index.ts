@@ -1,4 +1,4 @@
 import ApiDocsRoute from './apidocs/apidocs.route';
-import TestRoute from './test/test.route';
+import HealthRoute from './health/health.route';
 
-export default [TestRoute, ApiDocsRoute];
+export default [HealthRoute, ApiDocsRoute];

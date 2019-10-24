@@ -1,0 +1,2 @@
+export const PROCESS_SHUTDOWN = 'PROCESS_SHUTDOWN';
+export const PROCESS_EXIT = 'PROCESS_EXIT';

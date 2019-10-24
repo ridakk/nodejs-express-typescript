@@ -1,8 +1,9 @@
 import { Router, Request, Response } from 'express';
+import app from '../../app';
 import Route from '../route.interface';
 
 class TestRoute implements Route {
-  public path = '/test';
+  public path = '/healthz';
   public router: Router = Router();
 
   constructor() {
@@ -15,14 +16,25 @@ class TestRoute implements Route {
 
   /**
    * @swagger
-   * /test:
+   * /healthz:
    *   get:
-   *     description: Returns the homepage
+   *     description: health check route
    *     responses:
    *       200:
-   *         description: hello world
+   *         description: service is healthy
+   *       503:
+   *         description: service is shutting down
    */
   private get = async (request: Request, response: Response): Promise<void> => {
+    const isShuttingDown = app.get('isShuttingDown');
+
+    if (isShuttingDown) {
+      response.status(503).send({
+        message: 'ok',
+      });
+      return;
+    }
+
     response.status(200).send({
       message: 'ok',
     });
