@@ -3,9 +3,9 @@ import helmet from 'helmet';
 import bodyParser from 'body-parser';
 import compression from 'compression';
 import expressPinoLogger from 'express-pino-logger';
-import { logger, eventEmitter, Shutdown } from './utils';
+import { Nexit, NEXIT_SHUTDOWN } from 'nexit';
+import { logger } from './utils';
 import { error, notFound } from './middlewares';
-import { PROCESS_SHUTDOWN } from './utils/Shutdown/events';
 import env from './env';
 
 import routes from './routes';
@@ -24,9 +24,9 @@ app.use(bodyParser.json());
 app.use(compression());
 
 if (!env.isTest) {
-  new Shutdown();
+  const nexit = new Nexit();
 
-  eventEmitter.on(PROCESS_SHUTDOWN, () => {
+  nexit.on(NEXIT_SHUTDOWN, () => {
     app.set('isShuttingDown', true);
   });
 }
